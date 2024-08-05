@@ -6,9 +6,15 @@
     justify-connt: flex-end;
 }
 
+.monitor {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
 .button_01 {
     width: 100px;
     height: 100px;
+    padding: 16px;
     margin: 10px;
     border-radius: 30px;
     font-size: 20px;
