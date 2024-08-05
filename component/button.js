@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 const Button = () => {
     const [currentNumber, setCurrentNumber] = useState(0);
     const [targetNumber, setTargetNumber] = useState(null);
+    const [isIncreasing, setIsIncreasing] = useState(null);
 
     useEffect(() => {
         let timer;
@@ -11,8 +12,10 @@ const Button = () => {
             timer = setInterval(() => {
                 setCurrentNumber((prev) => {
                     if (prev < targetNumber) {
+			setIsIncreasing(true);
                         return prev + 1;
                     } else if (prev > targetNumber) {
+			setIsIncreasing(false);
                         return prev - 1;
                     } else {
                         clearInterval(timer);
@@ -29,46 +32,26 @@ const Button = () => {
     };
     return (
         <div className={styles.button_all}>
+	  {[1, 2, 3, 4, 5].map((num) => (
             <button
-                onClick={() => handleClick(1)}
+		key={num}
+                onClick={() => handleClick(num)}
                 type="button"
-                className={styles.button_01}
-            >1
+                className={styles[`button_0$(num)`]}
+            >
+	       {num}
             </button>
-
-            <button
-                onClick={() => handleClick(2)}
-                type="button"
-                className={styles.button_02}
-            >2
-            </button>
-
-            <button
-                onClick={() => handleClick(3)}
-                type="button"
-                className={styles.button_03}
-            >3
-            </button>
-
-            <button
-                onClick={() => handleClick(4)}
-                type="button"
-                className={styles.button_04}
-            >4
-            </button>
-
-            <button
-                onClick={() => handleClick(5)}
-                type="button"
-                className={styles.button_05}
-            >5
-            </button>
+	  ))}
 
             <div className={styles.monitor}>
                 {currentNumber > 0 && <span>{currentNumber}</span>}
+	    	{isIncreasing !== null && (
+			<span>
+				{isIncreasing ? "上昇中" : "降下中"}
+			</span>
+		)}
             </div>
         </div>
-
     )
 }
 export default Button
