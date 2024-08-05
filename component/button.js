@@ -37,7 +37,7 @@ const Button = () => {
 		key={num}
                 onClick={() => handleClick(num)}
                 type="button"
-                className={styles[`button_0$(num)`]}
+                className={styles[`button_01_05`]}
             >
 	       {num}
             </button>
