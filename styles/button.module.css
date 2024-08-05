@@ -1,0 +1,47 @@
+.button_all {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction:column-reverse;
+    justify-connt: flex-end;
+}
+
+.button_01 {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.button_02 {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.button_03 {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.button_04 {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 30px;
+    font-size: 20px;
+}
+
+.button_05 {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 30px;
+    font-size: 20px;
+}
