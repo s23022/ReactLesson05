@@ -11,42 +11,10 @@
     font-size: 24px;
 }
 
-.button_01 {
+.button_01_05 {
     width: 100px;
     height: 100px;
     padding: 16px;
-    margin: 10px;
-    border-radius: 30px;
-    font-size: 20px;
-}
-
-.button_02 {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    border-radius: 30px;
-    font-size: 20px;
-}
-
-.button_03 {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    border-radius: 30px;
-    font-size: 20px;
-}
-
-.button_04 {
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    border-radius: 30px;
-    font-size: 20px;
-}
-
-.button_05 {
-    width: 100px;
-    height: 100px;
     margin: 10px;
     border-radius: 30px;
     font-size: 20px;
